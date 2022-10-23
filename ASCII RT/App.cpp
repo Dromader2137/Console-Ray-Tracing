@@ -25,8 +25,8 @@ int main()
 	spheres.push_back(Sphere(Vector3f(0, 0, 6), .8f));
 	spheres.push_back(Sphere(Vector3f(), .2f));
 	spheres.push_back(Sphere(Vector3f(), .4f));
-	spheres.push_back(Sphere(Vector3f(), .1f));
 	spheres.push_back(Sphere(Vector3f(), .5f));
+	spheres.push_back(Sphere(Vector3f(), .1f));
 
 	float t = 0;
 
@@ -41,8 +41,8 @@ int main()
 		t += .016f;
 		spheres[1].position = Vector3f(sin(t * 2), sin(t * 2) * -0.2, cos(t * 2)) * 1.4f + Vector3f(0, 0, 6);
 		spheres[2].position = Vector3f(sin(t), sin(t) * 0.3, cos(t)) * 2.3f + Vector3f(0, 0, 6);
-		spheres[3].position = Vector3f(sin(t * 3) * 0.8, sin(t * 3), cos(t * 3)) * 1.05f + Vector3f(0, 0, 6);
-		spheres[4].position = Vector3f(sin(t / 2), sin(t / 2) * 0.1, cos(t / 2)) * 3.2f + Vector3f(0, 0, 6);
+		spheres[3].position = Vector3f(sin(t / 2), sin(t / 2) * 0.1, cos(t / 2)) * 3.2f + Vector3f(0, 0, 6);
+		spheres[4].position = Vector3f(sin(t * 4), sin(t * 4) * 0.1, cos(t * 4)) * .7f + spheres[3].position;
 
 		// RENDERING
 
